@@ -23,7 +23,8 @@ header h1 {
 }
 header img {
   width: 5%;
-  padding: 10px
+  padding: 10px;
+  padding-bottom: 0;
 }
 
 .content {
@@ -55,4 +56,8 @@ header img {
 
 .socialmedia a:hover{
   color: darkred;
+}
+
+.pictGallery .inner {
+  padding-bottom: 40px;
 }

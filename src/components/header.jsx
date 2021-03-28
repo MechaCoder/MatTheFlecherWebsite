@@ -12,7 +12,10 @@ export default class SiteHeader extends React.Component {
       <header>
         <div className='inner'>
           <img src={logo} alt='logo' />
-          <h1>Mat the Fletcher</h1>
+          <div className="title">
+            <h1>Mat the Fletcher</h1>
+            <h3>Arrows Never fly straight, They fly True </h3>
+          </div>
         </div>
       </header>);
   }
