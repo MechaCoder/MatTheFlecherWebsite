@@ -14,15 +14,23 @@ header {
 }
 
 header .inner {
-  display: inline-block;
+  display: flex;
+  text-align: left;
+  font-size: 100%;
 }
 
 header h1 {
   color: darkred;
   font-style: italic;
+  font-size: 2em;
+}
+
+header p {
+  color: goldenrod;
+  font-size: 1em;
 }
 header img {
-  width: 5%;
+  height: 120px;
   padding: 10px;
   padding-bottom: 0;
 }
@@ -60,4 +68,16 @@ header img {
 
 .pictGallery .inner {
   padding-bottom: 40px;
+}
+
+@media only screen and (max-width: 600px){
+  header img {
+    height: 100px;
+  }
+  header h1 {
+    font-size: 1.5em;
+  }
+  header p {
+    font-size: .75em;
+  }
 }

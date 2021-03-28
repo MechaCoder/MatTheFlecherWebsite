@@ -14,7 +14,7 @@ export default class SiteHeader extends React.Component {
           <img src={logo} alt='logo' />
           <div className="title">
             <h1>Mat the Fletcher</h1>
-            <h3>Arrows Never fly straight, They fly True </h3>
+            <p>Arrows Never fly straight, They fly True </p>
           </div>
         </div>
       </header>);
