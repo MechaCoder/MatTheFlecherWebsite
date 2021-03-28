@@ -4,6 +4,9 @@ import ReactDOM from 'react-dom';
 import logo from '../logo.svg';
 
 export default class SiteHeader extends React.Component {
+  componentDidMount(){
+    document.title = 'Mat The Fletcher';
+  }
   render() {
     return (
       <header>

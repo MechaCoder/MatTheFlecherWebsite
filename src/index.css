@@ -1,5 +1,6 @@
 body {
   background-color: black;
+  color: wheat
 }
 
 header {
@@ -8,6 +9,8 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+  height: 22%;
+  z-index: 1000;
 }
 
 header .inner {
@@ -21,4 +24,35 @@ header h1 {
 header img {
   width: 5%;
   padding: 10px
+}
+
+.content {
+  margin-top: 143px;
+  /* background-color: wheat; */
+}
+
+.content .inner {
+  padding: 5px
+  
+}
+
+.pannel {
+  background-color: darkslategray;
+  height: 100%;
+  margin: 1px;
+}
+
+.socialmedia a{
+  font-size: xxx-large;
+  text-decoration: none;
+  color: whitesmoke
+}
+
+.socialmedia div{
+  display: inline-block;
+  padding: 15px;
+}
+
+.socialmedia a:hover{
+  color: darkred;
 }
