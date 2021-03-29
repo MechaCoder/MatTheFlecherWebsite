@@ -76,7 +76,7 @@ export default class PicGallery extends React.Component {
         continue;
       }
       imgsSlides.push(
-        <div data-src={this.state.imgs[i]} />
+        <div key={i} data-src={this.state.imgs[i]} />
       )
     }
     
