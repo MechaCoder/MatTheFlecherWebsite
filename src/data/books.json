@@ -1,0 +1,32 @@
+{
+    "books": [
+        {
+            "src": "http://virtuquatuor.free.fr/Medieval%20Archer.pdf",
+            "title": "Medieval Archer"
+        },
+        {
+            "src": "https://www.google.co.uk/books/edition/_/fYowAAAAMAAJ?hl=en&gbpv=0",
+            "title": "Toxophilus - The School of Shooting, in Two Books"
+        },
+        {
+            "src": "https://www.amazon.co.uk/s?k=9780752463551&i=stripbooks&linkCode=qs",
+            "title": "With a Bended Bow: Archery in Medieval and Renaissance Europe"
+        },
+        {
+            "src": "https://www.google.co.uk/books/edition/Beginner_s_Guide_to_Traditional_Archery/agYEp2ei5qoC?hl=en&gbpv=0",
+            "title": "Beginner's Guide to Traditional Archery"
+        },
+        {
+            "src": "https://www.google.co.uk/books/edition/Traditional_Archery_from_Six_Continents/QwmWp4hSOMIC?hl=en&gbpv=1&dq=Fletching+arrow+making&printsec=frontcover",
+            "title": "Traditional Archery from Six Continents"
+        },
+        {
+            "src": "https://www.google.co.uk/books/edition/The_Witchery_of_Archery_a_Complete_Manua/EJYaAQAAMAAJ?hl=en&gbpv=0",
+            "title": "The Witchery of Archery: a Complete Manual of Archery"
+        },
+        {
+            "src": "https://www.google.co.uk/books/edition/Field_Archery_Technique/TotOAQAAMAAJ?hl=en&gbpv=0&bsq=Archery%20Finds",
+            "title": "Field Archery Technique"
+        }
+    ]
+}

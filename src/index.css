@@ -70,6 +70,31 @@ header img {
   padding-bottom: 40px;
 }
 
+.shelf{
+  background-color: darkslateblue;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.book {
+  text-decoration: none;
+  color: #fff;
+  overflow: hidden;
+}
+.book .cover {
+  background-color: darkslategray;
+  border: 1pt solid #fff;
+  margin: 5px;
+  text-orientation: mixed;
+  writing-mode: vertical-rl;
+  height: 300px;
+  overflow: hidden;
+  width: 25px;
+}
+.book .cover:hover {
+  background-color: darkolivegreen;
+}
+
 @media only screen and (max-width: 600px){
   header img {
     height: 100px;
