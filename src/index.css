@@ -37,7 +37,6 @@ header img {
 
 .content {
   margin-top: 143px;
-  /* background-color: wheat; */
 }
 
 .content .inner {
@@ -80,6 +79,7 @@ header img {
   text-decoration: none;
   color: #fff;
   overflow: hidden;
+  font-size: 12px;
 }
 .book .cover {
   background-color: darkslategray;
@@ -93,6 +93,14 @@ header img {
 }
 .book .cover:hover {
   background-color: darkolivegreen;
+  width: 200px;
+  writing-mode: horizontal-tb;
+}
+
+
+.book .info {
+  font-size: 5em;
+  margin-top: 30px;
 }
 
 @media only screen and (max-width: 600px){
