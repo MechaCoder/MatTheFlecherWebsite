@@ -32,6 +32,11 @@ export class Book extends React.Component{
             icon = faEbay;
         }
 
+        var notesEl = null;
+        if(this.props.notes.length != 0){
+            notesEl = (<div className="text inner">{this.props.notes}</div>)
+        }
+
         return(
             <a className="book" href={this.props.link} target="_blank">
                 <div className="cover">
@@ -40,9 +45,7 @@ export class Book extends React.Component{
                         <div className='info'>
                             <div className='inner'>
                                 <div className="icon"><FontAwesomeIcon icon={icon} /></div>
-                                <div className="text inner"> 
-                                    {this.props.notes}
-                                </div>
+                                {notesEl}
                             </div>
                         </div>
                     </div>

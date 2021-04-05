@@ -9,7 +9,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  height: 22%;
+  height: 130px;
   z-index: 1000;
 }
 
@@ -26,9 +26,14 @@ header h1 {
 }
 
 header p {
-  color: goldenrod;
+  color: black;
   font-size: 1em;
+  animation-name: lgbtColors;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
+
 header img {
   height: 120px;
   padding: 10px;
@@ -69,13 +74,16 @@ header img {
   padding-bottom: 40px;
 }
 
-.shelf{
-  background-color: darkslateblue;
+.shelf {
+  padding-bottom: 1px;
 }
 
 .shelf > .inner{
   display: flex;
   flex-wrap: wrap;
+  padding: 0;
+  margin: 5px;
+  background-color: #203737;
 }
 
 .book {
@@ -94,9 +102,11 @@ header img {
   overflow: hidden;
   width: 25px;
 }
+
 .book .cover:hover {
   width: 200px;
   writing-mode: horizontal-tb;
+
 }
 
 
@@ -132,4 +142,32 @@ header img {
   header p {
     font-size: .75em;
   }
+}
+
+@keyframes lgbtColors {
+  0% {
+    color: black;
+  }
+  12.5% {
+    color: brown;
+  }
+  25% {
+    color: red;
+  }
+  37.5% {
+    color: orange;
+  }
+  50% {
+    color: yellow;
+  }
+  62.5% {
+    color: green;
+  }
+  75% {
+    color: blue;
+  }
+  87.5% {
+    color: purple;
+  }
+
 }
