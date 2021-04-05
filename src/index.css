@@ -71,6 +71,9 @@ header img {
 
 .shelf{
   background-color: darkslateblue;
+}
+
+.shelf > .inner{
   display: flex;
   flex-wrap: wrap;
 }
@@ -92,15 +95,31 @@ header img {
   width: 25px;
 }
 .book .cover:hover {
-  background-color: darkolivegreen;
   width: 200px;
   writing-mode: horizontal-tb;
 }
 
 
 .book .info {
-  font-size: 5em;
+  font-size: 1em;
   margin-top: 30px;
+}
+
+.book .icon {
+  font-size: 5em;
+}
+
+.book .text {
+  height: 125px;
+  border: 1px solid #fff;
+  overflow: hidden;
+  text-align: justify;
+  background-color: darkolivegreen;
+  color: #fff;
+}
+
+.book .text:hover {
+  overflow-y: scroll;
 }
 
 @media only screen and (max-width: 600px){

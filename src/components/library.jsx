@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 import data from '../data/books.json';
 import { faBook } from '@fortawesome/free-solid-svg-icons'
-import { faFacebook, faYoutube, faAmazon } from '@fortawesome/free-brands-svg-icons'
+import { faFacebook, faYoutube, faAmazon, faEbay } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import {Book} from '@fortawesome/fontawesome-svg-core';
 
@@ -28,6 +28,10 @@ export class Book extends React.Component{
             icon = faAmazon;
         }
 
+        if(this.props.link.includes('ebay.co.uk')){
+            icon = faEbay;
+        }
+
         return(
             <a className="book" href={this.props.link} target="_blank">
                 <div className="cover">
@@ -35,7 +39,10 @@ export class Book extends React.Component{
                         <div className='title'>{this.props.title}</div>
                         <div className='info'>
                             <div className='inner'>
-                                <FontAwesomeIcon icon={icon} />
+                                <div className="icon"><FontAwesomeIcon icon={icon} /></div>
+                                <div className="text inner"> 
+                                    {this.props.notes}
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -71,9 +78,14 @@ export default class Library extends React.Component {
                 continue
             }
 
+            if(data.books[i].notes === undefined){
+                data.books[i].notes = ""
+            }
+
             books.push({
                 'title': data.books[i].title,
-                'url': data.books[i].src
+                'url': data.books[i].src,
+                'notes': data.books[i].notes
             })
 
         }
@@ -88,7 +100,7 @@ export default class Library extends React.Component {
                 continue
             }
             docs.push(
-                <Book key={i} title={this.state.libarary[i].title} link={this.state.libarary[i].url} />
+                <Book key={i} title={this.state.libarary[i].title} link={this.state.libarary[i].url} notes={this.state.libarary[i].notes} />
             )
         }
 
@@ -96,8 +108,10 @@ export default class Library extends React.Component {
         return(
             <div className='pannel library'>
                 <h1>Libray</h1>
-                <div className='inner shelf'>
-                    {docs}  
+                <div className='shelf'>
+                    <div className='inner'>
+                    {docs} 
+                    </div>
                 </div>
             </div>
         );

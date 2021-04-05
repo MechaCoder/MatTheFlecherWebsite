@@ -2,15 +2,18 @@
     "books": [
         {
             "src": "http://virtuquatuor.free.fr/Medieval%20Archer.pdf",
-            "title": "Medieval Archer"
+            "title": "Medieval Archer",
+            "notes": "Medieval Archer is a great book to start reading about Archery from a historical point of view."
         },
         {
             "src": "https://www.google.co.uk/books/edition/_/fYowAAAAMAAJ?hl=en&gbpv=0",
-            "title": "Toxophilus - The School of Shooting, in Two Books"
+            "title": "Toxophilus - The School of Shooting, in Two Books",
+            "notes": "Toxophilus is a book written by Roger Ascham, first published in 1545, for Henry VIII's court; it's the first Book about archery written in English. The Book offers a  detailed look at the archery of Henry VIII's time and is a massively helpful read. The Book is difficult to read due to the antiquated language."
         },
         {
             "src": "https://www.amazon.co.uk/s?k=9780752463551&i=stripbooks&linkCode=qs",
-            "title": "With a Bended Bow: Archery in Medieval and Renaissance Europe"
+            "title": "With a Bended Bow: Archery in Medieval and Renaissance Europe",
+            "notes": "It is a great book that looks into the history, Industry, and skills of archery of medieval and later periods."
         },
         {
             "src": "https://www.google.co.uk/books/edition/Beginner_s_Guide_to_Traditional_Archery/agYEp2ei5qoC?hl=en&gbpv=0",
@@ -39,7 +42,13 @@
         },
         {
             "src": "https://www.facebook.com/Wolfram.Bows/",
-            "title": "Wolfram Bows"
+            "title": "Wolfram Bows",
+            "notes": "Wolfram Bows is a company that makes 'reeactment bows' (low poundage), they are always very high quality, with excellent customer service."
+        },
+        {
+            "src": "https://www.ebay.co.uk/itm/A-Practical-guide-to-making-Longbow-Arrows-15-page-booklet/303156845068?hash=item46958e5a0c:g:1t8AAOSw2DBapq8u",
+            "title": "Details about  A Practical guide to making Longbow Arrows",
+            "notes": "This Booklet is both a great read and quick reference book that makes a great starting point, some self-published works can be like rolling a dice, but this one is worth the small cost."
         }
     ]
 }
