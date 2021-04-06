@@ -1,4 +1,5 @@
 import React from 'react';
+// eslint-disable-next-line
 import ReactDOM from 'react-dom';
 
 import AwesomeSlider from 'react-awesome-slider';
@@ -84,7 +85,7 @@ export default class PicGallery extends React.Component {
     return (
       <div className="pannel pictGallery" >
         <div className="inner">
-          <AwesomeSlider>
+          <AwesomeSlider animation="cubeAnimation" >
             {imgsSlides}
           </AwesomeSlider>
         </div>

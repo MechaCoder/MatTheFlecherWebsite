@@ -1,4 +1,5 @@
 import React from 'react';
+// eslint-disable-next-line
 import ReactDOM from 'react-dom';
 
 import data from '../data/books.json';
@@ -33,12 +34,12 @@ export class Book extends React.Component{
         }
 
         var notesEl = null;
-        if(this.props.notes.length != 0){
+        if(this.props.notes.length !== 0){
             notesEl = (<div className="text inner">{this.props.notes}</div>)
         }
 
         return(
-            <a className="book" href={this.props.link} target="_blank">
+            <a className="book" href={this.props.link} target="_blank" rel="noreferrer">
                 <div className="cover">
                     <div className="inner">
                         <div className='title'>{this.props.title}</div>
