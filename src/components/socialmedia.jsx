@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faFacebook, faInstagram} from '@fortawesome/free-brands-svg-icons';
-// import {} from '@fortawesome/free-regular-svg-icons';
 import {faMugHot} from '@fortawesome/free-solid-svg-icons';
 
 
