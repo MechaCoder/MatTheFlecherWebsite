@@ -70,6 +70,14 @@
         {
             "src": "http://www.bowyersandfletchersguild.org/index.html",
             "title": "The Craft Guild of Traditional Bowyers & Fletchers"
+        },
+        {
+            "src": "https://www.amazon.co.uk/gp/kindle/series/B0161XEU9Q?ie=UTF8&ref_=sr_1_8",
+            "title": "Traditional Bowyer's Bible"
+        },
+        {
+	        "src": "https://www.amazon.co.uk/gp/product/B00RY9ZU28/",
+	        "title": "Traditional and Modern Archery Manufacture"
         }
     ]
 }
