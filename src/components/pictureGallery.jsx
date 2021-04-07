@@ -73,9 +73,11 @@ export default class PicGallery extends React.Component {
   render() {
     var imgsSlides = []
     for(var i = 0; i<=this.state.imgs.length; i++){
+
       if(this.state.imgs[i] === undefined){
         continue;
       }
+
       imgsSlides.push(
         <div key={i} data-src={this.state.imgs[i]} />
       )
@@ -85,9 +87,21 @@ export default class PicGallery extends React.Component {
     return (
       <div className="pannel pictGallery" >
         <div className="inner">
-          <AwesomeSlider animation="cubeAnimation" >
-            {imgsSlides}
-          </AwesomeSlider>
+          <h1>Here is Some of my work.</h1>
+          
+          <div className='row'>
+            <div className="left">
+              <AwesomeSlider animation="cubeAnimation" >
+                {imgsSlides}
+              </AwesomeSlider>
+            </div>
+            <div className='right'>
+              <div className='inner'>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut tellus elementum sagittis vitae. Nec nam aliquam sem et tortor consequat id porta. Sit amet massa vitae tortor condimentum lacinia quis. Gravida in fermentum et sollicitudin ac. Ipsum dolor sit amet consectetur adipiscing elit ut. Amet nisl suscipit adipiscing bibendum est ultricies integer quis. Cursus eget nunc scelerisque viverra mauris in aliquam sem. Fermentum iaculis eu non diam phasellus vestibulum. Nunc scelerisque viverra mauris in. Duis convallis convallis tellus id. Cursus eget nunc scelerisque viverra mauris. Nunc pulvinar sapien et ligula ullamcorper malesuada proin libero. Purus ut faucibus pulvinar elementum integer.</p>
+                <p>Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at. Sit amet commodo nulla facilisi nullam vehicula ipsum a arcu. Ut lectus arcu bibendum at. Arcu bibendum at varius vel pharetra vel turpis nunc eget. Amet consectetur adipiscing elit duis tristique sollicitudin nibh sit. Turpis in eu mi bibendum neque egestas. Massa tincidunt dui ut ornare lectus sit amet. Pharetra et ultrices neque ornare aenean euismod elementum. Turpis egestas maecenas pharetra convallis posuere morbi leo urna molestie. Dictumst quisque sagittis purus sit amet volutpat consequat. Et netus et malesuada fames ac.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     );

@@ -78,6 +78,26 @@
         {
 	        "src": "https://www.amazon.co.uk/gp/product/B00RY9ZU28/",
 	        "title": "Traditional and Modern Archery Manufacture"
+        },
+        {
+            "src": "http://www.trueflightfeathers.com/guide.htm",
+            "title": "TRUEFLIGHT FEATHERS Fletching Guide"
+        },
+        {
+            "src": "https://archery360.com/2018/09/12/how-to-fletch-arrows/",
+            "title": "archery360 - HOW TO FLETCH ARROWS"
+        },
+        {
+            "src": "https://www.onlinearcheryacademy.com/how-to-fletch-an-arrow/",
+            "title": "onlinearcheryacademy.com - How To Fletch Recurve Vanes"
+        },
+        {
+            "src": "https://www.bohning.com/wp-content/uploads/2020/02/tech_guide_english.pdf",
+            "title": "BOHNING - TECHNICAL GUIDE"
+        },
+        {
+            "src": "http://www.greygoosearchery.co.uk/wp-content/uploads/2016/12/Easton-tuning_guide.pdf",
+            "title": "EASTON - ARROW TUNING AND MAINTENANCE GUIDE"
         }
     ]
 }

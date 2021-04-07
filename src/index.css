@@ -74,6 +74,19 @@ header img {
   padding-bottom: 40px;
 }
 
+.pictGallery .row {
+  display: flex;
+  flex-direction: row;
+}
+
+.pictGallery .row .left {
+  width: 50%;
+}
+
+.pictGallery .row .right {
+  width: 50%;
+}
+
 .shelf {
   padding-bottom: 1px;
 }
