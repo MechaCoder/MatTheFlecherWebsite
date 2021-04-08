@@ -97,8 +97,20 @@ export default class PicGallery extends React.Component {
             </div>
             <div className='right'>
               <div className='inner'>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut tellus elementum sagittis vitae. Nec nam aliquam sem et tortor consequat id porta. Sit amet massa vitae tortor condimentum lacinia quis. Gravida in fermentum et sollicitudin ac. Ipsum dolor sit amet consectetur adipiscing elit ut. Amet nisl suscipit adipiscing bibendum est ultricies integer quis. Cursus eget nunc scelerisque viverra mauris in aliquam sem. Fermentum iaculis eu non diam phasellus vestibulum. Nunc scelerisque viverra mauris in. Duis convallis convallis tellus id. Cursus eget nunc scelerisque viverra mauris. Nunc pulvinar sapien et ligula ullamcorper malesuada proin libero. Purus ut faucibus pulvinar elementum integer.</p>
-                <p>Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at. Sit amet commodo nulla facilisi nullam vehicula ipsum a arcu. Ut lectus arcu bibendum at. Arcu bibendum at varius vel pharetra vel turpis nunc eget. Amet consectetur adipiscing elit duis tristique sollicitudin nibh sit. Turpis in eu mi bibendum neque egestas. Massa tincidunt dui ut ornare lectus sit amet. Pharetra et ultrices neque ornare aenean euismod elementum. Turpis egestas maecenas pharetra convallis posuere morbi leo urna molestie. Dictumst quisque sagittis purus sit amet volutpat consequat. Et netus et malesuada fames ac.</p>
+                <h3>Welcome</h3>
+                <p>
+                  Hi, My Name is Matt, and i am a fletcher; some people call me to `mat the fletcher`. I am an Apprentice learning the noble art of fletching. i am getting better every day, and i have a long way to go. You can find me and contact me at any of the links above.
+                </p>
+                <h3>Makeing an Order</h3>
+                <p>
+                  When ordering, you must get the best possible quality and service; this is why i dont have arrows in the shop, every set of Arrows i make is customised for the customer that uses them.
+                </p>
+                <p>
+                  Building a specification means that i need to ask about your measurements, the equipment you use and the technique you use; from this, i can produce the arrows that will fit your needs.
+                </p>
+                <p>
+                  Every arrow comes with a three-year repair policy, which means that i will repair the arrows. Terms and conditions apply.
+                </p>
               </div>
             </div>
           </div>

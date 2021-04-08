@@ -86,6 +86,13 @@ header img {
 .pictGallery .row .right {
   width: 50%;
 }
+.pictGallery .row .right p {
+  text-align: justify;
+}
+
+.pictGallery .row h3 {
+  text-align: left;
+}
 
 .shelf {
   padding-bottom: 1px;
