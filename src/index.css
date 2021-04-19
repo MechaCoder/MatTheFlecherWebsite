@@ -123,12 +123,15 @@ header img {
   width: 25px;
 }
 
+.book .cover.new {
+  background-color: darkslateblue;
+}
+
 .book .cover:hover {
   width: 200px;
   writing-mode: horizontal-tb;
 
 }
-
 
 .book .info {
   font-size: 1em;

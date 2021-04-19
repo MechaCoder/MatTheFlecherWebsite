@@ -6,7 +6,6 @@ import data from '../data/books.json';
 import { faBook } from '@fortawesome/free-solid-svg-icons'
 import { faFacebook, faYoutube, faAmazon, faEbay } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import {Book} from '@fortawesome/fontawesome-svg-core';
 
 export class Book extends React.Component{
     render(){
@@ -38,9 +37,14 @@ export class Book extends React.Component{
             notesEl = (<div className="text inner">{this.props.notes}</div>)
         }
 
+        var bookCoverClasses = "cover ";
+        if(this.props.new){
+            bookCoverClasses += "new";
+        }
+
         return(
             <a className="book" href={this.props.link} target="_blank" rel="noreferrer">
-                <div className="cover">
+                <div className={bookCoverClasses} >
                     <div className="inner">
                         <div className='title'>{this.props.title}</div>
                         <div className='info'>
@@ -83,16 +87,28 @@ export default class Library extends React.Component {
             }
 
             if(data.books[i].notes === undefined){
-                data.books[i].notes = ""
+                data.books[i].notes = "";
+            }
+
+            if(data.books[i].new === undefined){
+                data.books[i].new = false;
             }
 
             books.push({
                 'title': data.books[i].title,
                 'url': data.books[i].src,
-                'notes': data.books[i].notes
+                'notes': data.books[i].notes,
+                'new': data.books[i].new
             })
 
         }
+
+        books.sort((a,b) => {
+            if(a.title < b.title){return -1}
+            if(a.title > b.title){return 1}
+            return 0
+        })
+
         this.setState({'libarary': books});
     }
 
@@ -104,7 +120,7 @@ export default class Library extends React.Component {
                 continue
             }
             docs.push(
-                <Book key={i} title={this.state.libarary[i].title} link={this.state.libarary[i].url} notes={this.state.libarary[i].notes} />
+                <Book key={i} title={this.state.libarary[i].title} link={this.state.libarary[i].url} notes={this.state.libarary[i].notes} new={this.state.libarary[i].new} />
             )
         }
 
