@@ -8,6 +8,21 @@ import { faFacebook, faYoutube, faAmazon, faEbay } from '@fortawesome/free-brand
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export class Book extends React.Component{
+    constructor(){
+        super();
+        this.state = {
+            'open': false
+        }
+
+        this.onClick = this.onClick.bind(this);
+    }
+
+    onClick(){
+        this.setState({
+            'open': !this.state.open
+        })
+    }
+
     render(){
 
         var icon = faBook;
@@ -39,23 +54,31 @@ export class Book extends React.Component{
 
         var bookCoverClasses = "cover ";
         if(this.props.new){
-            bookCoverClasses += "new";
+            bookCoverClasses += "new ";
+        }
+
+        if(this.state.open){
+            bookCoverClasses += "details"
         }
 
         return(
-            <a className="book" href={this.props.link} target="_blank" rel="noreferrer">
+            <span className="book" onClick={this.onClick} >
                 <div className={bookCoverClasses} >
                     <div className="inner">
                         <div className='title'>{this.props.title}</div>
                         <div className='info'>
                             <div className='inner'>
-                                <div className="icon"><FontAwesomeIcon icon={icon} /></div>
+                                <div className="icon"> 
+                                    <a href={this.props.link} target="_blank" rel="noreferrer">
+                                        <FontAwesomeIcon icon={icon} />
+                                    </a>
+                                </div>
                                 {notesEl}
                             </div>
                         </div>
                     </div>
                 </div>
-            </a>
+            </span>
         )
     }
 }
@@ -120,7 +143,13 @@ export default class Library extends React.Component {
                 continue
             }
             docs.push(
-                <Book key={i} title={this.state.libarary[i].title} link={this.state.libarary[i].url} notes={this.state.libarary[i].notes} new={this.state.libarary[i].new} />
+                <Book 
+                    key={i} 
+                    title={this.state.libarary[i].title} 
+                    link={this.state.libarary[i].url} 
+                    notes={this.state.libarary[i].notes} 
+                    new={this.state.libarary[i].new} 
+                />
             )
         }
 

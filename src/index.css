@@ -121,16 +121,17 @@ header img {
   height: 300px;
   overflow: hidden;
   width: 25px;
+  cursor: pointer;
 }
 
 .book .cover.new {
   background-color: darkslateblue;
 }
 
-.book .cover:hover {
+.book .cover.details {
   width: 200px;
   writing-mode: horizontal-tb;
-
+  cursor: unset;
 }
 
 .book .info {
@@ -140,6 +141,14 @@ header img {
 
 .book .icon {
   font-size: 5em;
+}
+.book .icon a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.book .icon a:hover{
+  color: slategrey;
 }
 
 .book .text {
