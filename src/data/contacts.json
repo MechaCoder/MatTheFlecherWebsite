@@ -1,0 +1,29 @@
+{
+    "projectt": [
+        {
+            "title": "National LGBT+ Domestic Abuse Helpline",
+            "number": "0800 999 5428",
+            "email": "help@galop.org.uk"
+        },
+        {
+            "title": "LGBT+ Hate Crime Helpline",
+            "number": "020 7704 2040",
+            "email": "HateCrime@galop.org.uk"
+        },
+        {
+            "title": "Mermaid’s Helpline",
+            "number": "0808 801 0400",
+            "sms": "85258"
+        },
+        {
+            "title": "samaritans",
+            "number": "116 123",
+            "email": "jo@samaritans.org"
+        },
+        {
+            "title": "switchboard",
+            "number": "0300 330 0630",
+            "email": "chris@switchboard.lgbt"
+        }
+    ]
+}

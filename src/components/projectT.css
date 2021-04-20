@@ -1,0 +1,26 @@
+.vaild {
+    line-height: 12px;
+    font-size: xx-large;
+}
+
+.welcome a {
+    text-decoration: none;
+    color: slateblue;
+}
+
+.welcome a:hover {
+    color: slategray;
+    text-decoration: underline;
+}
+
+.help .row {
+    display: flex;
+    flex-direction: row;
+}
+
+.help .row .contact {
+    background-color: #000;
+    margin: 5px;
+    height: 200px;
+    width: 25%;
+}

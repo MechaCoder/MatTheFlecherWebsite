@@ -7,6 +7,7 @@ import SiteHeader from './components/header.jsx';
 import SocialMedia from './components/socialmedia.jsx';
 import PicGallery from './components/pictureGallery.jsx';
 import Libary from './components/library.jsx';
+import ProjectT from './components/projectT.jsx';
 
 function App() {
 
@@ -22,6 +23,12 @@ function App() {
   if(loc === '?lib'){
     content = [
       <Libary key='c'/>
+    ]
+  }
+  //  ?AinSakhri
+  if(loc === '?AinSakhri'){
+    content = [
+      <ProjectT />
     ]
   }
 
