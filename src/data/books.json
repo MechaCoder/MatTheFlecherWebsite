@@ -128,6 +128,21 @@
             "src": "https://www.youtube.com/user/wildernessoutfitters",
             "title": "David Canterbury",
             "new": true
+        },
+        {
+            "src": "https://www.youtube.com/channel/UC88lvyJe7aHZmcvzvubDFRg",
+            "title": "Timeline - World History Documentaries",
+            "new": true
+        },
+        {
+            "src": "https://www.youtube.com/user/shadmbrooks",
+            "title": "Shadiversity",
+            "new": true
+        },
+        {
+            "src": "https://www.youtube.com/user/ThegnThrand",
+            "title": "ThegnThrand",
+            "new": true
         }
     ]
 }
