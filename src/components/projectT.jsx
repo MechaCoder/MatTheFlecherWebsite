@@ -44,6 +44,7 @@ export default class ProjectT extends React.Component {
                         <div className='inner'>
                             <h1>You Are valid !,</h1>
                             <h1>You are not Alone</h1>
+                            <hr />
                         </div>
                     </div>
                     <div className='pannel welcome'>
@@ -66,6 +67,7 @@ export default class ProjectT extends React.Component {
                                 If you dont have acesses to a phone O2 have the Alcatel 20.38X phone for £5.00 and a £5.00 sim only bundle. 
                                 you can check out useing paypal and they offer a click and collect service.
                             </div>
+                            <hr />
                             <div className="row">
                                 {contacts}
                             </div>

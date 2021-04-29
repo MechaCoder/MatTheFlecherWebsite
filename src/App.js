@@ -25,10 +25,10 @@ function App() {
       <Libary key='c'/>
     ]
   }
-  //  ?AinSakhri
+
   if(loc === '?AinSakhri'){
     content = [
-      <ProjectT />
+      <ProjectT key='d' />
     ]
   }
 

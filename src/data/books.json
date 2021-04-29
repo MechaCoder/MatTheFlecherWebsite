@@ -143,6 +143,11 @@
             "src": "https://www.youtube.com/user/ThegnThrand",
             "title": "ThegnThrand",
             "new": true
+        },
+        {
+            "src": "http://www.archerytoronto.ca/pdfs/",
+            "title": "ARCHERY TORONTO - Library",
+            "new": true
         }
     ]
 }
