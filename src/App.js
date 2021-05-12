@@ -8,6 +8,7 @@ import SocialMedia from './components/socialmedia.jsx';
 import PicGallery from './components/pictureGallery.jsx';
 import Libary from './components/library.jsx';
 import ProjectT from './components/projectT.jsx';
+import Showcase from './components/showcase.jsx';
 
 function App() {
 
@@ -29,6 +30,12 @@ function App() {
   if(loc === '?AinSakhri'){
     content = [
       <ProjectT key='d' />
+    ]
+  }
+
+  if(loc === '?pics'){
+    content = [
+      <Showcase key='e' />
     ]
   }
 

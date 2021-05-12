@@ -67,7 +67,15 @@ export default class PicGallery extends React.Component {
       'pics/DSC_0084.JPG',
       'pics/DSC_0085.JPG',
     ]
-    this.setState({'imgs': x})
+    var y = []
+    while (y.length <= 8){
+      var rand = Math.floor(
+        Math.random() * x.length
+      )
+
+      y.push(x[rand])
+    }
+    this.setState({'imgs': y})
   }
 
   render() {
