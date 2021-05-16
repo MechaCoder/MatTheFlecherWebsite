@@ -1,0 +1,15 @@
+.showcase .products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.showcase .pic {
+    background-color: slategrey;
+    padding: 5px;
+    margin: 5px;
+}
+
+.showcase .pic img {
+    height: 150px;
+}

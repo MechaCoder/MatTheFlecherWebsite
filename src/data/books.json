@@ -137,8 +137,12 @@
         },
         {
             "src": "http://www.archerytoronto.ca/pdfs/",
-            "title": "ARCHERY TORONTO - Library",
-            "new": true
+            "title": "ARCHERY TORONTO - Library"
+        },
+        {
+            "src": "http://www.survivorlibrary.com/library-download.html",
+            "title": "Survivor Library",
+            "notes": "a massive library of books and documents and a huge amount of subjects"
         }
     ]
 }

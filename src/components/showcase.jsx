@@ -1,9 +1,19 @@
+import './showcase.css'
 import React from 'react';
 // eslint-disable-next-line
 import ReactDOM from 'react-dom';
-import { ReactPhotoCollage } from "react-photo-collage";
 
+import LazyLoad from 'react-lazyload';
 
+function picFrame(path, key){
+    return(
+        <div key={key} className='pic'>
+            <LazyLoad>
+                <img src={path} />
+            </LazyLoad>
+        </div>
+    )
+}
 
 export default class Showcase extends React.Component {
 
@@ -70,10 +80,23 @@ export default class Showcase extends React.Component {
     }
 
     render(){
-        return(<div className="showcase">
+
+        var imgs = []
+
+        for(var i = 0; i<=this.state.pics.length; i++){
+            if(this.state.pics[i] === undefined){continue}
+            // console.log(this.state.pi                                                                                                                                                                cs[i])
+            imgs.push(
+                picFrame(this.state.pics[i], i)
+            )
+        }
+
+        return(<div className="pannel showcase">
             <div className="inner">
                 <div><h2>My product ShowCase</h2></div>
-                <div></div>
+                <div className='products'>
+                    {imgs}
+                </div>
             </div>
         </div>)
     }
