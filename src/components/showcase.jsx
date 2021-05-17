@@ -5,14 +5,16 @@ import ReactDOM from 'react-dom';
 
 import LazyLoad from 'react-lazyload';
 
-function picFrame(path, key){
-    return(
-        <div key={key} className='pic'>
-            <LazyLoad>
-                <img src={path} />
-            </LazyLoad>
-        </div>
-    )
+class PicFrame extends React.Component {
+    render(){
+        return(
+            <div key={this.props.key} className='pic'>
+                <LazyLoad height={200} once>
+                    <img src={this.props.path} />
+                </LazyLoad>
+            </div>
+        )
+    }
 }
 
 export default class Showcase extends React.Component {
@@ -85,9 +87,8 @@ export default class Showcase extends React.Component {
 
         for(var i = 0; i<=this.state.pics.length; i++){
             if(this.state.pics[i] === undefined){continue}
-            // console.log(this.state.pi                                                                                                                                                                cs[i])
             imgs.push(
-                picFrame(this.state.pics[i], i)
+                <PicFrame key={i} path={this.state.pics[i]} />
             )
         }
 

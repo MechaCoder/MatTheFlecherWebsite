@@ -10,14 +10,20 @@ export default class SiteHeader extends React.Component {
   }
   render() {
     return (
-      <header>
-        <div className='inner'>
-          <a href='/'><img src={logo} alt='logo' /></a>
-          <div className="title">
-            <h1>Mat the Fletcher</h1>
-            <p>Arrows Never fly straight, They fly True <a href='?AinSakhri' >.</a> </p>
+        <header>
+          <div className='inner'>
+            <a href='/'><img src={logo} alt='logo' /></a>
+            <div className="title">
+              <h1>Mat the Fletcher</h1>
+              <p>Arrows Never fly straight, They fly True <a href='?AinSakhri' >.</a> </p>
+            </div>
+            <div className='nav'>
+              <nav>
+                  <a href='/?pics'> <div className='el' > Pictures of my work </div> </a>
+              </nav>
+            </div>
           </div>
-        </div>
-      </header>);
+        </header>
+      );
   }
 }
