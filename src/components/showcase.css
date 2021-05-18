@@ -11,7 +11,7 @@
 }
 
 .showcase .pic:hover {
-    background-color: rgb(5, 5, 5);
+    background-color: darkred;
 }
 
 .showcase .pic img {
