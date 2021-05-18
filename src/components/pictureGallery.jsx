@@ -111,7 +111,7 @@ export default class PicGallery extends React.Component {
                 </p>
                 <h3>Makeing an Order</h3>
                 <p>
-                  When ordering, you must get the best possible quality and service; this is why i dont have arrows in the shop, every set of Arrows i make is customised for the customer that uses them.
+                  When ordering, you will get the best possible quality and service; this is why i dont have arrows in a shop, every single Arrow i make is customised for the Archer or bowman.
                 </p>
                 <p>
                   Building a specification means that i need to ask about your measurements, the equipment you use and the technique you use; from this, i can produce the arrows that will fit your needs.

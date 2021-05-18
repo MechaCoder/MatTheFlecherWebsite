@@ -15,3 +15,7 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+console.log(
+  "mat's CV: ",
+  'https://docs.google.com/document/d/1IkjD2e5uHDxyk7kRvu1-KfvJuODMBrZEuaAQZ2gRTyM/edit?usp=sharing'
+)

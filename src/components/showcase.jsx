@@ -10,8 +10,8 @@ class PicFrame extends React.Component {
         return(
             <div key={this.props.key} className='pic'>
                 <LazyLoad height={200} once>
-                    <img src={this.props.path} />
-                </LazyLoad>
+                    <img src={this.props.path} alt='my product {i}' />
+                </LazyLoad> 
             </div>
         )
     }
