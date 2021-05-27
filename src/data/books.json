@@ -142,7 +142,13 @@
         {
             "src": "http://www.survivorlibrary.com/library-download.html",
             "title": "Survivor Library",
-            "notes": "a massive library of books and documents and a huge amount of subjects"
-        }
+            "notes": "a massive library of books and documents and a huge amount of subjects",
+            "new": true
+        },
+        {
+            "src": "https://www.academia.edu/23907882/Wooden_Egyptian_archery_bows_in_the_collections_of_the_British_Museum?email_work_card=title",
+            "title": "Wooden Egyptian archery bows in the collections of the British Museum",
+            "new": true
+	    }
     ]
 }

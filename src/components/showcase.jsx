@@ -6,6 +6,12 @@ import ReactDOM from 'react-dom';
 import LazyLoad from 'react-lazyload';
 
 class PicFrame extends React.Component {
+
+    constructor(){
+        super()
+        this.state = {}
+    }
+
     render(){
         return(
             <div key={this.props.key} className='pic'>
@@ -94,7 +100,7 @@ export default class Showcase extends React.Component {
 
         return(<div className="pannel showcase">
             <div className="inner">
-                <div><h2>My product ShowCase</h2></div>
+                <div><h2>My product showcase</h2></div>
                 <div className='products'>
                     {imgs}
                 </div>
