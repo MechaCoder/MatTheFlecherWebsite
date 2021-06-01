@@ -20,6 +20,7 @@ export default class SiteHeader extends React.Component {
             <div className='nav'>
               <nav>
                   <a href='/?pics'> <div className='el' > Pictures of my work </div> </a>
+                  <a href='/?calc'> <div className='el' > Calculators </div> </a>
               </nav>
             </div>
           </div>

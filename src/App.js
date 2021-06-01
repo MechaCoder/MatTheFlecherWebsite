@@ -9,6 +9,7 @@ import PicGallery from './components/pictureGallery.jsx';
 import Libary from './components/library.jsx';
 import ProjectT from './components/projectT.jsx';
 import Showcase from './components/showcase.jsx';
+import Calculators from './components/calculator.jsx';
 
 function App() {
 
@@ -36,6 +37,13 @@ function App() {
   if(loc === '?pics'){
     content = [
       <Showcase key='e' />
+    ]
+  }
+
+  // content.push(<Calculators />)
+  if(loc === '?calc'){
+    content = [
+      <Calculators />
     ]
   }
 

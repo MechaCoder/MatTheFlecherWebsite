@@ -20,7 +20,7 @@ header .inner {
 }
 
 header .title {
-  width: 80%;
+  width: 60%;
 }
 
 header h1 {
@@ -46,11 +46,13 @@ header img {
 
 header nav {
   margin: 25px;
+  display: flex;
 }
 
 header nav .el {
   background-color: darkslategrey;
   padding: 20px;
+  margin: 1px;
 }
 
 header nav .el:hover {
