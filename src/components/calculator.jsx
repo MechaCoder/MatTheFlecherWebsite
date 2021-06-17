@@ -2,6 +2,8 @@ import React from 'react';
 // eslint-disable-next-line
 import ReactDOM from 'react-dom';
 
+import "./calculator.css";
+
 class Foc extends React.Component {
     constructor(){
         super();
@@ -23,18 +25,15 @@ class Foc extends React.Component {
 
     render(){
 
-        var stepOne = this.state.l / 2;
-        var stepTwo = this.state.b;
-        var stepThree = stepOne - stepTwo;
-        var stepFour = stepThree * 100;
-        var stepFive = stepFour / stepOne;
 
-        if(isNaN(stepFive)){
-            stepFive = 0;
+        var foc = ( (this.state.l / 2) - this.state.b) * 100 / (this.state.l / 2)
+
+        if(isNaN(foc)){
+            foc = 0;
         }
 
         return(
-            <div className="pannel" >
+            <div className="pannel foc" >
                 <div className="header">
                     <div className="inner">
                         <h2>Calculators</h2>
@@ -45,15 +44,18 @@ class Foc extends React.Component {
                         <div className="header"><h3>Front of Center</h3></div>
                         <div className="inner">
                             <div className="row" >
-                                <label htmlFor="l">Length of Arrow</label>
+                                <label htmlFor="l"> <div> Length of Arrow </div> </label>
                                 <input type="number" name="l" value={this.state.l} onChange={this.updateValueFoc} />mm
                             </div>
                             <div className="row">
-                                <label htmlFor="b">Balance Point</label>
+                                <label htmlFor="b"> <div>Balance Point</div> </label>
                                 <input type="number" name="b" value={this.state.b} onChange={this.updateValueFoc} />mm
                             </div>
-                            <div>
-                                {Math.round(stepFive)}%
+                            <div className='results'>
+                                <div>
+                                    <h3>Front of center</h3>
+                                    {Math.round(foc)}%
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -87,20 +89,20 @@ class KineticEnergy extends React.Component {
 
 
         return(
-            <div className="KinetticEnergy pannel" >
+            <div className="kinetticEnergy pannel" >
                 <div className="inner" >
                     <div className="header">
-                        <h1></h1>
+                        <h1>Kenetic Energy</h1>
                     </div>
                     <div className="row">
-                        <label htmlFor="weight">Arrow Weight (grains)</label>
+                        <label htmlFor="weight"><div> Arrow Weight (grains) </div></label>
                         <input type="number" name='weight' value={this.state.weight} onChange={this.onChangeEvent} />
                     </div>
                     <div className="row">
-                        <label htmlFor="speed">Arrow speed (FPS)</label>
+                        <label htmlFor="speed"><div>Arrow speed (FPS)   </div></label>
                         <input type="number" name='speed' value={this.state.speed} onChange={this.onChangeEvent} />
                     </div>
-                    <div className="row">
+                    <div className="row results">
                         <div className="ke">
                             <h3>Kenetic Energy</h3>
                             <h4>{ke}</h4>
@@ -120,7 +122,7 @@ class KineticEnergy extends React.Component {
 export default class Calculator extends React.Component {
     render(){
         return(
-            <div>
+            <div className="calculator">
                 <Foc />
                 <KineticEnergy />
             </div>

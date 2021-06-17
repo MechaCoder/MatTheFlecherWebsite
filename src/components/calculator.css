@@ -1,0 +1,23 @@
+.calculator .row{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.calculator .results div{
+    border: darkgrey solid 1px;
+    margin: 5px;
+    padding: 5px;
+    width: 400px;
+}
+
+.calculator .row  label div {
+    width: 200px;
+}
+
+.calculator input {
+    background-color: darkslategrey;
+    border: none;
+    border-bottom: white 1px solid;
+    width: 100px;
+}
