@@ -1,7 +1,6 @@
 .calculator .row{
     display: flex;
     flex-direction: row;
-
 }
 
 .calculator .results div{
@@ -20,4 +19,8 @@
     border: none;
     border-bottom: white 1px solid;
     width: 100px;
+}
+
+.calculator .row{
+    justify-content: space-evenly;
 }

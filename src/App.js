@@ -4,6 +4,7 @@ import './App.css';
 
 
 import SiteHeader from './components/header.jsx';
+import SiteFooter from './components/footer.jsx';
 import SocialMedia from './components/socialmedia.jsx';
 import PicGallery from './components/pictureGallery.jsx';
 import Libary from './components/library.jsx';
@@ -53,6 +54,7 @@ function App() {
       <div className='content'>
         {content}
       </div>
+      <SiteFooter />
     </div>
   );
 }
