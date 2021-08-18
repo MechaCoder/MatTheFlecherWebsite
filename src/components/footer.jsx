@@ -27,7 +27,7 @@ export default class SiteFooter extends React.Component {
     }
 
     componentDidMount(){
-        const interval = setInterval(()=>{
+        this.interval = setInterval(()=>{
             this.setState({'feedback': selectFeedback() })
         }, 10000)
     }
